@@ -1,0 +1,34 @@
+.flex() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col(@width) {
+    width: @width;
+    padding: 0 15px;
+}
+
+.col-banner(@width) {
+    width: @width;
+}
+
+.transition() {
+    transition: all .3s ease;
+}
+
+.tranform(@scale) {
+    transform: @scale;
+    -webkit-transform: @scale;
+    -o-transform: @scale;
+    -moz-transform: @scale;
+    -ms-transform: @scale;
+}
+
+.transit(@attr, @sec) {
+    transform: @attr, @sec;
+    -webkit-transform: @attr, @sec;
+    -o-transform: @attr, @sec;
+    -moz-transform: @attr, @sec;
+    -ms-transform: @attr, @sec;
+}

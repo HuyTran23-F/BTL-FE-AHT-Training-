@@ -1,0 +1,493 @@
+@media all and (max-width: 1200px) {
+    // .header {
+    //     background-position: center;
+    //     background-size: cover;
+    // }
+
+    .main-content {
+    // Category product
+        .category-product-inner {
+            .product-info {
+                box-shadow: 0px 0px 0px #FFF;
+                align-items: center;
+                justify-content: center;
+                // .info-fitness {
+                //     // no content
+                // }
+                .info-fitness:last-child {
+                    display: flex;
+                }
+            }
+        }
+    // End category product
+
+    // Product
+    .product {
+        margin: 0px;
+       .product-inner {
+           .info-product {
+               justify-content: space-around;
+           }
+       }
+   }
+    // End Product
+
+    // Branching
+        .branch {
+            .logo-branching {
+                flex-wrap: wrap;
+                div {
+                    padding-left: 18px;
+                    padding-right: 18px;
+               }
+            }
+        }
+// End Branching    
+    }
+
+// Footer 
+    .footer {
+        .footer-top {
+            .footer-inner-bottom {
+                .information {
+                    justify-content: space-between;
+
+                    .info-footer {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+// End Footer
+
+
+}
+
+@media all and (max-width: 1055px) {
+// header banner
+    .header {
+        &-nav {
+            .header-inner {
+                justify-content: space-around;
+                .nav-bar {
+                    order: 3;
+
+                    .toggle {
+                        display: block;
+                        i {
+                            color: #fff;
+                        }
+                    }
+
+                    .nav-bar-item {
+                        position: fixed;
+                        top: 0;
+                        right: 0;
+                        z-index: 99;
+                        background-color: rgb(252, 252, 252);
+                        width: 40vw;
+                        height: 100vh;
+                        padding: 15px 0;
+                        z-index: 999;
+                        .tranform(translateX(110%));
+                        // .transit(all, .4s);
+
+                        .menu-title {
+                            display: block;
+                            cursor: pointer;
+                        }
+
+                        .exit-nav {
+                            display: block;
+                            position: absolute;
+                            color :#000;
+                            font-size: 30px;
+                            top: 2px;
+                            right: 10px;
+                            cursor: pointer;
+                            transition: all .3s ease;
+                        }
+                        
+                        .nav-list {
+                            display: block;
+                            line-height: 40px;
+                            margin: 0;
+                            padding: 0px 40px;
+                            
+                            a {
+                                color: #000;
+                                display: block;
+                                border-bottom: 1px solid #bbb;
+                            }
+                       }
+                   } 
+                   .active {
+                       .tranform(translateX(0));
+                   }
+                    .exit-nav.active {
+                        .tranform(translateX(100%));
+                    }
+                }
+                .nav-icon {
+                    order: 2;
+                }
+            }
+        }
+    }
+// End header banner
+
+}
+
+@media all and (max-width: 1024px) {
+// Header banner
+    .banner {
+        .banner-content {
+            .title-big {
+                font-size: 60px;
+                text-align: center;
+                line-height: 120px;
+            }
+
+            .title-medium {
+                font-size: 40px;
+                text-align: center;
+                line-height: 90px;
+
+            }
+
+            .title-small {
+                p { 
+                    line-height: 30px;
+                    margin: auto;
+                    text-align: center;
+                    font-size: 14px;
+                }
+            }
+
+            .btn {     
+                max-width: 172px;
+                margin: auto;
+            }
+        }
+    }
+// End header banner
+    
+// Main content
+    .main-content {
+// Product
+        .product {
+             margin: 0px;
+            .product-inner {
+                .info-product {
+                    justify-content: space-around;
+                }
+            }
+        }
+// End Product
+
+        hr {
+            margin-bottom: 30px;
+        }
+// Branching
+        .branch {   
+            padding: 40px 0px;   
+            .logo-branching {
+                justify-content: space-around;
+                div {
+                    .col(33.3333%);
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        max-width: 100%;
+                        text-align: center;
+                    }           
+                }
+            }
+        }
+    }  
+// End Branching
+    
+// Footer 
+    .footer {
+        .footer-top {
+            .footer-inner-top {
+                .content-text {
+                    padding-left: 150px;
+                    padding-right: 150px;
+                    text-align: center;
+                    font-size: 14px;
+                }
+            }
+
+            .footer-inner-bottom {
+                .information {
+                    justify-content: space-between;
+                    .info-footer {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+// End Footer
+}
+
+@media all and (max-width: 811px) {
+    .main-content {
+        .category-product-inner {
+            .product-info {
+                box-shadow: 0px 0px 0px #FFF;
+                align-items: center;
+                justify-content: center;
+                .info-fitness {
+
+                }
+                .info-fitness:last-child {
+                    flex-direction: column-reverse;
+                }
+            }
+        }
+    }
+   // End category product
+}
+
+@media all and (max-width: 768px) {
+// Header banner
+    .banner {
+        .banner-content {
+            .title-big {
+                font-size: 50px;
+                text-align: center;
+                line-height: 100px;
+            }
+
+            .title-medium {
+                font-size: 35px;
+                text-align: center;
+                line-height: 70px;
+
+            }
+
+            .title-small {
+                p { 
+                    line-height: 30px;
+                    margin: auto;
+                    text-align: center;
+                    font-size: 13px;
+                }
+            }
+
+            .btn {     
+                max-width: 172px;
+                margin: auto;
+            }
+        }
+    }
+// End Header
+
+// Main Content
+    .main-content {
+    //  Product
+         .product {
+             margin: 0px;
+             .product-inner {
+                 .info-product {
+                    justify-content: space-around;
+                 }
+             }
+        }
+    // End Product
+
+
+        hr {
+            margin-bottom: 30px;
+        }
+    }  
+// End Main Content
+
+// Footer 
+    .footer {
+        .footer-top {
+            .footer-inner-top {
+                .content-text {
+                    padding-left: 80px;
+                    padding-right: 80px;
+                    text-align: center;
+                    font-size: 14px;
+                }
+            }
+
+            .footer-inner-bottom {
+                .information {
+                    justify-content: space-between;
+                    div {
+                        div {
+                            .contact-us {
+                                .icon-contact {
+                                    a {
+                                        i {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                                .info-contact {
+                                    line-height: 20px;
+                                    padding-top: 10px;
+                                    padding-bottom: 10px;
+                                }
+                            }
+                        }
+                    }
+
+                    .info-footer {
+                        margin: 0;
+                        div {
+                            a {
+                                line-height: 40px;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+// End Footer
+
+}
+
+@media all and (max-width: 576px) {
+    // Header banner
+    .header {
+        &-nav {
+            .header-inner {
+                .nav-icon {
+                    position: relative;
+                    .arrow-down {
+                        display: block;
+                    }
+                    &-item {
+                        display: none;
+                        position: absolute;
+                        background-color: rgb(37, 37, 37);
+                        top: 77px;
+                        right: -53px;
+                        
+                        .list-icon {
+                            width: 40%;
+                            line-height: 30px;
+                            margin: 0;
+                            padding: 10px 50px;
+                        }
+                        span {
+                            border: none;
+                        }
+                    }
+                    .nav-icon-item.hidden {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    // End header banner
+
+    // Main-content 
+    .main-content {
+    // Testormonial
+        .testormonial {
+            .testormonial-inner {
+                h2 {
+                    font-size: 30px;
+                    line-height: 70px;
+                }
+
+                .slider {
+                    .slideshow-container {
+                        .mySlides {
+                            .text {
+                                font-size: 15px;
+                                line-height: 24px;
+                            }
+                        }
+                    } 
+                }
+            }
+        }
+    // End testormonial
+        hr {
+            margin-bottom: 30px;
+        }
+    }
+
+
+// Footer 
+    .footer {
+        .footer-top {
+            .footer-inner-top {
+                .content-text {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    text-align: center;
+                    font-size: 13px;
+                }
+            }
+
+            .footer-inner-bottom {
+                .information {
+                    flex-direction: column;
+                    div {
+                        h3 {
+                            font-size: 15px;
+                            line-height: 24px;
+                            margin: 0;
+                        }
+                        div {
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            .contact-us {
+                                padding: 10px;
+                                .icon-contact {
+                                    margin: 0;
+                                    a {
+                                        line-height: 14px;
+                                    }
+                                }
+                                .info-contact {
+                                    padding: 10px;
+                                    line-height: 14px;
+                                }
+                            }
+                        }
+                    }
+
+                    .info-footer {
+                        margin: 0;
+                        padding: 10px;
+                        div {
+                            display: flex;
+                            flex-wrap: wrap;
+                            div {
+                                a {
+                                    padding: 10px;
+                                    line-height: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-bottom {
+            font-size: 13px;
+            text-align: center;
+        }
+    }
+// End Footer
+
+}
+
